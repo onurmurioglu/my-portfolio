@@ -3,10 +3,10 @@ import React from "react";
 const About: React.FC = () => {
   return (
     <section id="about" className="about">
-      <h2>Hakkımda</h2>
+      <h2>About Me</h2>
       <p>
-        React ve React Native alanında uzmanlaşmış bir Full Stack Developer
-        olarak projeler geliştiriyorum...
+        I develop projects as a Full Stack Developer specialized in React and
+        React Native.
       </p>
     </section>
   );

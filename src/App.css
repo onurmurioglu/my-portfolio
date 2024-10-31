@@ -4,10 +4,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  background-color: #31363f;
 }
 
 #root {
@@ -26,14 +23,41 @@ html {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   background-color: #333;
   padding: 1rem;
+  flex-wrap: wrap;
 }
 
 header a {
   color: #fff;
   text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.profile-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 section {
@@ -47,4 +71,5 @@ section {
   margin: 1rem;
   border-radius: 8px;
   background-color: #f9f9f9;
+  color: black;
 }
