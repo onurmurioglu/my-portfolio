@@ -13,14 +13,14 @@ const Contact: React.FC = () => {
     {
       icon: <FaLinkedin />,
       title: "LinkedIn",
-      value: "linkedin.com/in/onur-murioglu",
-      link: "https://linkedin.com/in/onur-murioglu",
+      value: "Onur Murioğlu",
+      link: "https://www.linkedin.com/in/onur-murio%C4%9Flu-9409ab19a/",
     },
     {
       icon: <FaGithub />,
       title: "GitHub",
-      value: "github.com/yourusername",
-      link: "https://github.com/yourusername",
+      value: "github.com/onurmurioglu",
+      link: "https://github.com/onurmurioglu",
     },
   ];
 

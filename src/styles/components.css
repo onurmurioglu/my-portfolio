@@ -177,18 +177,23 @@ body {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .project-card {
   background: var(--card-background);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card:hover {
@@ -834,5 +839,102 @@ body {
   .nav-link {
     padding: 0.5rem 1rem;
     font-size: 1rem;
+  }
+}
+
+/* Responsive breakpoints güncellemesi */
+@media (max-width: 1400px) {
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+}
+
+/* Title Text Styles */
+.title-text {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 2.8rem;
+  }
+
+  .tech-stack {
+    font-size: 1rem;
+  }
+}
+
+/* Project Icons */
+.project-icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.project-icon {
+  transition: transform 0.3s ease;
+}
+
+.project-icon:hover {
+  transform: scale(1.2);
+}
+
+.project-card:hover .project-icon {
+  animation: iconPulse 1s ease infinite;
+}
+
+@keyframes iconPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
