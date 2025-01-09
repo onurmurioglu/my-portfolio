@@ -6,7 +6,6 @@ import {
   FaNodeJs,
   FaMobile,
   FaDatabase,
-  FaDocker,
   FaCreditCard,
   FaChartLine,
   FaTasks,
@@ -16,7 +15,7 @@ import {
   FaMapMarkedAlt,
 } from "react-icons/fa";
 import {
-  SiSpringboot,
+  SiSpring,
   SiSocketdotio,
   SiFirebase,
   SiAntdesign,
@@ -35,7 +34,7 @@ const projects: Project[] = [
       "Back end application of the blog project where users can post question and answer posts using Java Spring Boot.",
     icons: [
       <FaJava key="java" />,
-      <SiSpringboot key="spring" />,
+      <SiSpring key="spring" />,
       <FaDatabase key="db" />,
     ],
   },
@@ -167,7 +166,6 @@ const Projects: React.FC = () => {
               }}
             >
               <div>
-                <h3>{project.title}</h3>
                 <div className="project-icons">
                   {project.icons.map((icon, iconIndex) => (
                     <span key={iconIndex} className="project-icon">
@@ -175,6 +173,7 @@ const Projects: React.FC = () => {
                     </span>
                   ))}
                 </div>
+                <h3>{project.title}</h3>
                 <p>{project.description}</p>
               </div>
             </motion.div>

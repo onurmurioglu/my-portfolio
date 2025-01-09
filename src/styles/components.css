@@ -205,6 +205,8 @@ body {
   color: var(--secondary-color);
   margin-bottom: 1rem;
   font-size: 1.3rem;
+  border-top: 1px solid rgba(var(--text-color), 0.1);
+  padding-top: 1rem;
 }
 
 .project-card p {
@@ -909,7 +911,7 @@ body {
 .project-icons {
   display: flex;
   gap: 1rem;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   justify-content: center;
   font-size: 1.5rem;
   color: var(--secondary-color);
