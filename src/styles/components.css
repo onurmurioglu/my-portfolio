@@ -940,3 +940,83 @@ body {
     transform: scale(1);
   }
 }
+
+/* Footer Styles */
+.footer {
+  background: var(--card-background);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(var(--text-color-rgb), 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-social a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.footer-social a:hover {
+  color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.heart-icon {
+  color: #e25555;
+  display: inline-block;
+  margin: 0 0.3rem;
+  animation: heartBeat 1.5s ease infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+  }
+
+  .footer-content {
+    padding: 0 1rem;
+  }
+
+  .footer-social {
+    gap: 1.5rem;
+  }
+
+  .footer-social a {
+    font-size: 1.3rem;
+  }
+}
